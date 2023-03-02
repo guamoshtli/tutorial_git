@@ -7,3 +7,39 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
+
+    <div>
+      Para revertir un cambio en el Working directory
+
+<br>
+git restore file
+o bien ..-
+
+git checkout -- file
+<br>
+Para revertir un cambio en el staged
+
+git restore --staged file..." to unstage
+o bien ...
+git reset HEAD file
+<br>
+
+Para revertir un cambio en el stage con commit realizado
+<br>
+git checkout [hash commit]
+
+o bien ...
+
+git reset --hard [hash commit]
+
+<br>
+Para revertir un cambio  en el stage con commit realizado  al stage sin comit:
+<br>
+git reset --soft [hash commit]
+al working ...
+git restore --staged file
+del working ..
+git restore file
+    </div>
+
+
