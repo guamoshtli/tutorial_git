@@ -47,13 +47,34 @@
         git restore [file]</td>
     </tr>
     <tr>
-      <th scope="row">4</th>
+      <th scope="row">5</th>
       <td>git diff hash_old hash_new </td>
       <td>Ver las diferencias entre 2 commits</td>
-      <td>Ejemplos: <br> git diff ec7b69c  f2e3a33 <br> git diff HEAD~1 HEAD <br> O solo ... <br>
-      git diff HEAD~1
+      <td>Ejemplos: <br> git diff ec7b69c f2e3a33 <br> git diff HEAD~1 HEAD <br> O solo ... <br>
+        git diff HEAD~1
       </td>
     </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>git revert hash_anterior</td>
+      <td>Para revertir el ultimo commit del repositorio</td>
+      <td> o bien <br>
+        git revert HEAD~1
+      </td>
+    </tr>
+    <tr>
+    <th scope="row">7</th>
+    <td>git revert --no-commit HEAD <br>
+      git revert --no-commit HEAD~1 <br>
+      . <br>
+      . <br>
+      . <br>
+      git revert --no-commit HEAD~n <br>
 
+      git revert --continue</td>
+    <td>Para revertir varios commits sin solicitar commit para cada uno</td>
+    <td>
+    </td>
+    </tr>
   </tbody>
 </table>
